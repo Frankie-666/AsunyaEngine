@@ -1,0 +1,12 @@
+RewriteEngine on
+RewriteRule ^$ /asunya
+RewriteRule ^/$ /asunya
+RewriteRule ^auth$ plugins/auth/index.php
+RewriteRule ^ask$ add.php
+RewriteRule ^ans$ ans.php
+RewriteRule ^del$ del.php
+RewriteRule ^ForgiveMePlease$ forgive_me.html
+RewriteRule ^set$ set.php
+#RewriteRule ^user$ index.php
+#RewriteRule ^([A-z0-9]+)$ index.php?name=$1 [L]
+RewriteRule ^asunya$ index.php?name=asunya [L]
